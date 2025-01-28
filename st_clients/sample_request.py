@@ -6,7 +6,7 @@ import clipboard
 st.title("Sample Request")
 
 def get_sample_request():
-   url = "http://127.0.0.1:5000/model/sample"
+   url = "https://raiharun.pythonanywhere.com/model/sample"
    res = requests.get(url)
    decoded_response = res.content.decode('utf-8')
    return decoded_response

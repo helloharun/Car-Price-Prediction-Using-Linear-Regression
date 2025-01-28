@@ -127,7 +127,7 @@ with left_column:
    
    btn = left_column.button('Predict selling price')
    if btn:
-      url = "http://127.0.0.1:5000/model/evaluate"
+      url = "https://raiharun.pythonanywhere.com/model/evaluate"
       res = requests.post(url=url,json=payload)
       
       # st.dialog("Predictd Selling Price", res.json(), width="small")

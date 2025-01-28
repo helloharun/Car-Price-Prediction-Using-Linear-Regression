@@ -5,7 +5,7 @@ import requests
 st.title("Parameters Explanation")
 
 def get_explanation():
-   url = "http://127.0.0.1:5000/model/explain"
+   url = "https://raiharun.pythonanywhere.com/model/explain"
    res = requests.get(url)
    return res.content
 
